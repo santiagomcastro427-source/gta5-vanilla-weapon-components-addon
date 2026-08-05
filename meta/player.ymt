@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weaponcomponentattachments>
+  <Item>
+    <name>COMPONENT_PISTOL_FLSH_2_LASER</name>
+    <displayName>Laser Sight v2</displayName>
+    <description>Advanced laser sight attachment</description>
+    <type>LASER_SIGHT</type>
+    <model>w_at_pi_flsh_2</model>
+    <compatibleWeapons>
+      <weapon>WEAPON_PISTOL</weapon>
+      <weapon>WEAPON_COMBATPISTOL</weapon>
+    </compatibleWeapons>
+    <price>5000</price>
+    <weight>0.2</weight>
+    <enabled>true</enabled>
+  </Item>
+  <Item>
+    <name>COMPONENT_PISTOL_FLSH_3_LASER</name>
+    <displayName>Laser Sight v3</displayName>
+    <description>Enhanced laser sight attachment</description>
+    <type>LASER_SIGHT</type>
+    <model>w_at_pi_flsh_3</model>
+    <compatibleWeapons>
+      <weapon>WEAPON_PISTOL</weapon>
+      <weapon>WEAPON_COMBATPISTOL</weapon>
+      <weapon>WEAPON_VINTAGEPISTOL</weapon>
+    </compatibleWeapons>
+    <price>6000</price>
+    <weight>0.25</weight>
+    <enabled>true</enabled>
+  </Item>
+  <Item>
+    <name>COMPONENT_ASSAULTRIFLE_FLSH_3_LASER</name>
+    <displayName>Laser Sight Rifle</displayName>
+    <description>Tactical laser sight for assault rifles</description>
+    <type>LASER_SIGHT</type>
+    <model>w_at_ar_flsh_3</model>
+    <compatibleWeapons>
+      <weapon>WEAPON_ASSAULTRIFLE</weapon>
+      <weapon>WEAPON_CARBINERIFLE</weapon>
+      <weapon>WEAPON_ADVANCEDRIFLE</weapon>
+    </compatibleWeapons>
+    <price>8000</price>
+    <weight>0.35</weight>
+    <enabled>true</enabled>
+  </Item>
+</weaponcomponentattachments>

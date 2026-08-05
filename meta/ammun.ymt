@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weaponshop>
+  <Item>
+    <nameHash>w_at_pi_flsh_2</nameHash>
+    <nameLabel>Laser Sight v2</nameLabel>
+    <descLabel>Advanced laser sight attachment for pistols</descLabel>
+    <price>5000</price>
+    <slot>ATTACHMENT_SLOT_SIGHT</slot>
+    <componentHash>COMPONENT_PISTOL_FLSH_2_LASER</componentHash>
+    <category>ATTACHMENT</category>
+    <type>LASER_SIGHT</type>
+    <unlocked>1</unlocked>
+    <available>1</available>
+    <inShop>1</inShop>
+  </Item>
+  <Item>
+    <nameHash>w_at_pi_flsh_3</nameHash>
+    <nameLabel>Laser Sight v3</nameLabel>
+    <descLabel>Enhanced laser sight attachment for pistols</descLabel>
+    <price>6000</price>
+    <slot>ATTACHMENT_SLOT_SIGHT</slot>
+    <componentHash>COMPONENT_PISTOL_FLSH_3_LASER</componentHash>
+    <category>ATTACHMENT</category>
+    <type>LASER_SIGHT</type>
+    <unlocked>1</unlocked>
+    <available>1</available>
+    <inShop>1</inShop>
+  </Item>
+  <Item>
+    <nameHash>w_at_ar_flsh_3</nameHash>
+    <nameLabel>Laser Sight Rifle</nameLabel>
+    <descLabel>Tactical laser sight for assault rifles</descLabel>
+    <price>8000</price>
+    <slot>ATTACHMENT_SLOT_SIGHT</slot>
+    <componentHash>COMPONENT_ASSAULTRIFLE_FLSH_3_LASER</componentHash>
+    <category>ATTACHMENT</category>
+    <type>LASER_SIGHT</type>
+    <unlocked>1</unlocked>
+    <available>1</available>
+    <inShop>1</inShop>
+  </Item>
+</weaponshop>
