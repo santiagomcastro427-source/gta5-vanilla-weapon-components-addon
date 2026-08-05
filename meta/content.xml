@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+  <meta>
+    <name>Vanilla Weapon Components Addon</name>
+    <version>1.0.0</version>
+    <author>GTA5 Legacy 2026</author>
+    <description>Addon que añade componentes láser a las armas vanilla</description>
+    <type>MOD</type>
+  </meta>
+  <dlcList>
+    <dlcitem>
+      <dlcName>vanillaweaponcomponentuser</dlcName>
+      <isLoadingScreen>false</isLoadingScreen>
+      <isMission>false</isMission>
+      <contentChangeSetName>WEAPON_COMPONENTS</contentChangeSetName>
+      <mapChangeSetName>WEAPON_COMPONENTS_MAP</mapChangeSetName>
+      <setupFiles>
+        <file>vanillaweaponcomponentuser:/setup2.xml</file>
+      </setupFiles>
+      <contentFiles>
+        <file>vanillaweaponcomponentuser:/x64/models/cdimages/weapons.rpf</file>
+      </contentFiles>
+      <metaFiles>
+        <meta>vanillaweaponcomponentuser:/x64/models/cdimages/weapons.meta</meta>
+        <meta>vanillaweaponcomponentuser:/x64/models/cdimages/weaponcomponents.meta</meta>
+      </metaFiles>
+      <executablePath>VanillaWeaponComponentsAddon.asi</executablePath>
+      <requiredVersion>1.0.2060.0</requiredVersion>
+      <dependsOn>ScriptHookV</dependsOn>
+    </dlcitem>
+  </dlcList>
+  <weapons>
+    <weapon>
+      <hash>COMPONENT_PISTOL_FLSH_2_LASER</hash>
+      <model>w_at_pi_flsh_2</model>
+      <displayName>Laser Sight Pistol v2</displayName>
+      <shop>AMMU_NATION</shop>
+      <price>5000</price>
+      <available>true</available>
+    </weapon>
+    <weapon>
+      <hash>COMPONENT_PISTOL_FLSH_3_LASER</hash>
+      <model>w_at_pi_flsh_3</model>
+      <displayName>Laser Sight Pistol v3</displayName>
+      <shop>AMMU_NATION</shop>
+      <price>6000</price>
+      <available>true</available>
+    </weapon>
+    <weapon>
+      <hash>COMPONENT_ASSAULTRIFLE_FLSH_3_LASER</hash>
+      <model>w_at_ar_flsh_3</model>
+      <displayName>Laser Sight Assault Rifle</displayName>
+      <shop>AMMU_NATION</shop>
+      <price>8000</price>
+      <available>true</available>
+    </weapon>
+  </weapons>
+  <shops>
+    <shop>
+      <name>AMMU_NATION</name>
+      <displayName>Ammu-Nation</displayName>
+      <sellsWeapons>true</sellsWeapons>
+      <sellsComponents>true</sellsComponents>
+    </shop>
+  </shops>
+</content>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup2 version="2">
+  <dlcName>vanillaweaponcomponentuser</dlcName>
+  <dlcLabel>Vanilla Weapon Components</dlcLabel>
+  <dlcVersion>1.0.0</dlcVersion>
+  
+  <contentChangeSets>
+    <contentChangeSet>
+      <name>WEAPON_COMPONENTS</name>
+      <allowMultipleSelect>true</allowMultipleSelect>
+      <components>
+        <component>
+          <name>Laser Sight Components</name>
+          <type>WEAPON_COMPONENTS</type>
+          <itemSets>
+            <itemSet>
+              <name>PistolLaserV2</name>
+              <items>
+                <item>
+                  <name>w_at_pi_flsh_2</name>
+                  <type>WEAPON</type>
+                  <path>x64/models/cdimages/weapons.rpf</path>
+                </item>
+              </items>
+            </itemSet>
+            <itemSet>
+              <name>PistolLaserV3</name>
+              <items>
+                <item>
+                  <name>w_at_pi_flsh_3</name>
+                  <type>WEAPON</type>
+                  <path>x64/models/cdimages/weapons.rpf</path>
+                </item>
+              </items>
+            </itemSet>
+            <itemSet>
+              <name>RifleLaserV3</name>
+              <items>
+                <item>
+                  <name>w_at_ar_flsh_3</name>
+                  <type>WEAPON</type>
+                  <path>x64/models/cdimages/weapons.rpf</path>
+                </item>
+              </items>
+            </itemSet>
+          </itemSets>
+        </component>
+      </components>
+    </contentChangeSet>
+  </contentChangeSets>
+  
+  <mapChangeSets>
+    <mapChangeSet>
+      <name>WEAPON_COMPONENTS_MAP</name>
+      <mapFiles>
+        <mapFile>
+          <name>weapons.rpf</name>
+          <type>WEAPON_MODELS</type>
+        </mapFile>
+      </mapFiles>
+    </mapChangeSet>
+  </mapChangeSets>
+  
+  <weaponShop>
+    <name>Ammu-Nation Laser Components</name>
+    <enabled>true</enabled>
+    <weapons>
+      <weapon>
+        <model>w_at_pi_flsh_2</model>
+        <displayName>Pistol with Laser Sight (v2)</displayName>
+        <description>Standard pistol equipped with advanced laser sight component</description>
+        <price>5000</price>
+        <available>true</available>
+        <unlocked>true</unlocked>
+        <inShop>AMMU_NATION</inShop>
+        <category>PISTOLS</category>
+      </weapon>
+      <weapon>
+        <model>w_at_pi_flsh_3</model>
+        <displayName>Pistol with Laser Sight (v3)</displayName>
+        <description>Enhanced pistol equipped with advanced laser sight component</description>
+        <price>6000</price>
+        <available>true</available>
+        <unlocked>true</unlocked>
+        <inShop>AMMU_NATION</inShop>
+        <category>PISTOLS</category>
+      </weapon>
+      <weapon>
+        <model>w_at_ar_flsh_3</model>
+        <displayName>Assault Rifle with Laser Sight</displayName>
+        <description>Tactical assault rifle equipped with advanced laser sight component</description>
+        <price>8000</price>
+        <available>true</available>
+        <unlocked>true</unlocked>
+        <inShop>AMMU_NATION</inShop>
+        <category>RIFLES</category>
+      </weapon>
+    </weapons>
+  </weaponShop>
+  
+  <components>
+    <component>
+      <type>LASER_SIGHT</type>
+      <name>Laser Sight Module</name>
+      <enabled>true</enabled>
+      <compatibleWith>w_at_pi_flsh_2,w_at_pi_flsh_3,w_at_ar_flsh_3</compatibleWith>
+      <effects>
+        <effect>
+          <name>laserbeam.fxc</name>
+          <type>SHADER</type>
+        </effect>
+        <effect>
+          <name>laser_noise.dds</name>
+          <type>TEXTURE</type>
+        </effect>
+      </effects>
+    </component>
+  </components>
+  
+  <integrations>
+    <integration>
+      <name>LaserSights.asi</name>
+      <type>ASI_MODULE</type>
+      <required>true</required>
+      <autoActivate>true</autoActivate>
+    </integration>
+  </integrations>
+  
+  <installation>
+    <preInstallScripts>
+      <script>VanillaWeaponComponentsAddon.dll</script>
+    </preInstallScripts>
+    <postInstallScripts>
+      <script>config/weapon_components.ini</script>
+    </postInstallScripts>
+    <requiredFiles>
+      <file>VanillaWeaponComponentsAddon.asi</file>
+      <file>config/weapon_components.ini</file>
+    </requiredFiles>
+  </installation>
+</setup2>
