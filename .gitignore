@@ -1,0 +1,63 @@
+# Build directories
+build/
+bin/
+obj/
+out/
+dist/
+
+# Visual Studio
+.vs/
+*.sln.DotSettings
+*.user
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.suo
+*.vcxproj.user
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Dependencies
+dependencies/*/
+!dependencies/CMakeLists.txt
+
+# Build outputs
+*.obj
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.o
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.directory
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.bak
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
